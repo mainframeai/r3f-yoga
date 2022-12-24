@@ -7,14 +7,15 @@ body,
   height: 100vh;
   overflow: hidden;
   color: white;
+  background: #000;
 }
 
 body {
   cursor: url('/images/ellipse.svg'), pointer;
   cursor: -webkit-image-set(url('/images/ellipse.svg') 1x, url('/images/ellipse.svg') 2x), pointer;
   background: #272727;
-  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Roboto,
-    Ubuntu, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, Roboto, Ubuntu, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
 .scrollArea {
@@ -47,7 +48,7 @@ body {
 
 .loading-bar {
   height: 3px;
-  background: white;
+  background: red;
 }
 
 .loading-data {
@@ -57,4 +58,8 @@ body {
   margin-top: 0.8em;
   color: #f0f0f0;
   font-size: 0.6em;
+}
+
+.bg {
+  min-height: screen;
 }
