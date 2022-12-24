@@ -22,21 +22,13 @@ export default function Model(props) {
     <group {...props} dispose={null}>
       <group ref={group}>
         <mesh geometry={nodes.geo.geometry} castShadow receiveShadow>
-          <MeshDistortMaterial color="#ffffff" flatShading roughness={1} metalness={0.5} factor={15} speed={5} />
+          <MeshDistortMaterial color="#000" flatShading roughness={1} metalness={0.5} factor={15} speed={5} />
         </mesh>
         <mesh geometry={nodes.geo.geometry}>
-          <meshBasicMaterial wireframe />
+          <meshBasicMaterial wireframe color="#191919" />
         </mesh>
       </group>
-      <group position={[1.25, -0.5, 0]}>
-        <Text position={[0, 0, 0]} fontSize={0.07} lineHeight={1} letterSpacing={-0.05}>
-          03
-          <meshBasicMaterial color="#cccccc" toneMapped={false} />
-        </Text>
-        <Text bold position={[-0.01, -0.1, 0]} fontSize={0.1} lineHeight={1} letterSpacing={-0.05} color="black">
-          {`Poimandres,\nThe vision of Hermes`}
-        </Text>
-      </group>
+
       <Shadow ref={shadow} opacity={0.3} rotation-x={-Math.PI / 2} position={[0, -1.51, 0]} />
     </group>
   )

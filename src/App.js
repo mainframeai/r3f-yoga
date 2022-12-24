@@ -172,7 +172,7 @@ export default function App() {
         dpr={[1, 2]}
         camera={{ position: [0, 0, 10], far: 1000 }}
         gl={{ powerPreference: 'high-performance', alpha: false, antialias: false, stencil: false, depth: false }}
-        onCreated={({ gl }) => gl.setClearColor('#f5f5f5')}>
+        onCreated={({ gl }) => gl.setClearColor('#000')}>
         <pointLight position={[-10, -10, -10]} intensity={1} />
         <ambientLight intensity={0.4} />
         <spotLight
